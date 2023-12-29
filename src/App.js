@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Mintsec } from './components/Mintsec';
+import Faqsec from './components/Faqsec';
+import Teamsec from './components/Teamsec';
+import Partners from './components/Partners';
+import Utilitie from './components/Utilitie';
+import Kong from './components/Kong';
+import Roadmapsec from './components/Roadmapsec';
+import Aboutsec from './components/Aboutsec';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Aboutsec />
+      <Utilitie />
+      <Kong />
+      <Mintsec />
+      <Roadmapsec />
+      <Partners />
+      <Teamsec />
+      <Faqsec />
+    </>
   );
 }
 
